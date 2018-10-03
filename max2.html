@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm max 2 trong mảng</title>
+</head>
+<body>
+<script>
+    var arr = [1,3,5,7,9,13];
+    var max1 = arr[0];
+    var max2 = 0;
+    var i;
+
+    function maxArray(arr) {
+        for(var i = 1; i < arr.length; i++){
+            if(arr[i] > max1 ){
+                max2 = max1;
+                max1 = arr[i];
+            }
+        }
+        return max2;
+    }
+    alert(maxArray(arr));
+</script>
+</body>
+</html>
